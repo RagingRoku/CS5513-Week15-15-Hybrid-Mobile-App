@@ -1,8 +1,19 @@
+/* 
+  Ionic tutorial from https://ionicframework.com/docs/react/your-first-app
+  
+  NOTE Tutorial has typos and bugs, double check the code at GitHub repo
+  https://github.com/ionic-team/tutorial-photo-gallery-react
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+// Call the element loader after the platform has been bootstrapped
+defineCustomElements(window);
 
 ReactDOM.render(
   <React.StrictMode>
